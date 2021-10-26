@@ -9,11 +9,9 @@ This is a temporary script file.
 
 import pandas as pd
 
-
 ##Step 2- Bring in dataframe using the raw code link in GitHub 
 
 diabetic_data = pd.read_csv('https://raw.githubusercontent.com/hantswilliams/AHI_DataSci_507/main/Datasets/Diabetes/DB1_Diabetes/diabetic_data.csv')
-
 
 ##Step 3- Identify categorical and numerical values in dataset
 
@@ -27,15 +25,14 @@ list(diabetic_data)
 ##Race is a column consisting of categorical data 
 ##Number of lab procedures is a column cnsisting of numerical data 
 
-
 ###FIRST QUESTION: Is there a difference between sex (M:F) and the number of days in hospital?
 
-##Step 5- Create variables both genders in dataframe 
+##Step 4- Create variables for both genders in dataframe 
 
 Females = diabetic_data[diabetic_data['gender'] == 'Female']
 Males = diabetic_data[diabetic_data['gender'] == 'Male']
 
-##Step 6- Perform a 2-sample T-test to solve question
+##Step 5- Perform a 2-sample T-test to solve question
 
 from scipy.stats import ttest_ind
 
