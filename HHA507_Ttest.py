@@ -45,6 +45,7 @@ ttest_ind(Females['time_in_hospital'], Males['time_in_hospital'])
 ##SECOND QUESTION: Is there a difference between RACE (Caucasian and African American) and the number of days in hospital?
 
 ##Step 6- Create variables for both races of interests in the datafame 
+
 Caucasian = diabetic_data[diabetic_data['race'] == 'Caucasian'] 
 African_American = diabetic_data[diabetic_data['race'] == 'AfricanAmerican']
 
