@@ -52,7 +52,7 @@ African_American = diabetic_data[diabetic_data['race'] == 'AfricanAmerican']
 ##Step 7- Perform a 2-sample T-test to solve the second question 
 
 ttest_ind(Caucasian['time_in_hospital'], African_American ['time_in_hospital'])
-##Ttest stat result: 5.0610017032095325
+##Ttest stat result: -5.0610017032095325
 ##Ttest pvalue result: 4.178330085585203e-07
 ##Conclusion: Since the p value is below .05, it means that there is a significant 
 ##difference between Caucasian and African American patients in relation to the total number of days in hospital. 
@@ -66,7 +66,7 @@ Asian = diabetic_data[diabetic_data['race'] == 'Asian']
 ##Step 9- Perform a 2-sample T-test to solve question 
 
 ttest_ind(Asian['num_lab_procedures'], African_American['num_lab_procedures'])
-##Ttest stat result: 3.9788715315360292
+##Ttest stat result: -3.9788715315360292
 ##Ttest pvalue result: 6.948907528800307e-05
 ##Conclusion: Since the p value is below .05, it means that there is a significant 
 ##difference between Asians and African American patients in relation to the number of lab procedures performed. 
